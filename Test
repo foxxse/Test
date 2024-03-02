@@ -1,0 +1,8 @@
+-- Hack Script for Animal Sim: Teleport to Coins
+local player = game.Players.LocalPlayer
+local coins = game.Workspace.Coins:GetChildren()
+
+for i, coin in ipairs(coins) do
+    player.Character:MoveTo(coin.Position)
+    wait(0.1)
+end
